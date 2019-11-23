@@ -6,13 +6,7 @@ import random
 from numpy import inf
 import numpy as np
 from copy import deepcopy
-from first_bag import *
-from free_bag import *
-from forbid_bag import *
-from permit_bag import *
-from rcpg_bag import *
-from rcpg1_bag import *
-from contol_bag import *
+from bcgrammar import *
 full_path = os.path.realpath(__file__) # fulle path to this file
 img_dir = os.path.dirname(full_path) #full path to directory from where this module is run
 size = 260 # size of the image canvas
