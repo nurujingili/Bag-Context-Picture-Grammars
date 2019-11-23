@@ -71,9 +71,6 @@ def hasApplicabeRule(rules, latest_pform):
                 return True
     return False
 
-
-
-
 """
 Font to be used for display labels on the squares in the images
 """
@@ -114,7 +111,6 @@ def applyRule(rule1, pformV):
     latest_pform=(firstH+middle+secondH)
     return latest_pform # return the updated set with the rule1 applied to the relevant label-coordinates pair and a count of such label-coordinate pair in the set
     ## for loop end
-
 
 """
 this methods calculates the coordinates of the new squares that will replace an existing one
@@ -251,7 +247,6 @@ if __name__ == "__main__":
                 if apply_lower_and_upper_limit(rule,vector):
                     vector=update_vector(rule,vector)
                     latest_pform = applyRule(rule, latest_pform) # apply the current rule
-
 
                     im = Image.new("RGB", (size,size), "white")
                     draw = ImageDraw.Draw(im)
